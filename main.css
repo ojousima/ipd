@@ -1,38 +1,18 @@
+body {
+  padding-top: 50px;
+  background-image:url('images/wooden_texture.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
 
-    body{
-        background-color: #fdfdfd;
-        color: #2e2e2e;
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        line-height: 28px;
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
-    div.content{
-        border: 1px solid #fbfbfb;
-        background-color: #fff;
-        max-width: 640px;
-        width: 96%;
-        padding: 2%;
-        margin: 28px  auto;
-    }
+.coffee-table{
+  background-color:#7a3402;
+  color:#FFFFFF;
+}
 
-    table.package{
-	border: 1px solid #888;
-	width: 350px;
-	height: 500px;
-    }
-
-    tr.empty{
-	background-color: #FFF;
-	border:none;
-    }
-
-    tr.consumed{
-	background-color: #AAA;
-    }
-
-    tr.remaining{
-	background-color: #8b4513;
-    }
-
+div.header{
+	text-align:center;
+	color:#7a3402; //Same as .coffee-table's
+}
