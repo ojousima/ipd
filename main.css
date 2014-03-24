@@ -1,6 +1,6 @@
 body {
   padding-top: 50px;
-  background-image:url('images/wooden_texture.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
+  background-image:url('images/bg_hazelwood.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
 }
 .starter-template {
   padding: 40px 15px;
@@ -13,6 +13,48 @@ body {
 }
 
 div.header{
+	text-align: center;
+	color: #c59f67;
+	font-size: 60px;
+	font-weight: 500;
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+#header-img{
+	width: 100%;
+	height:90px;
+	top: 40px;
+	left: 0px;
+	background-image: url('images/header_beans.jpg');
+}
+
+#navbar-bg{
+	margin-top:15px;
+	margin-bottom:15px;
+	background:#c59f67;
+}
+
+.centering{
+	margin-right: auto;
+	margin-left: auto;
+	width: 400px;
+	float: none;
+}
+
+li{
+	width:200px;
 	text-align:center;
-	color:#7a3402; //Same as .coffee-table's
+	font-size: 20px;
+	letter-spacing: 1px;
+	color:#5f3316;
+}
+
+a{
+	color:inherit;
+}
+
+.active{
+	background-color:#5f3316;
+	color:#c59f67;
 }
