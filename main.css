@@ -165,8 +165,7 @@ a{
 	background: #B6A791;
 	height: 65px;
 	width: 100%;
-	position: absolute;
-	bottom: 10px;
+	margin-top:100px;
 	text-align: center;
 	padding-top: 23px;
 	color: rgb(83, 83, 83);
