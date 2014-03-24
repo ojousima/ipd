@@ -100,11 +100,31 @@ a{
 	height:123px;
 	padding-top:20px;
 	padding-bottom:20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: -webkit-box;
 }
-
+@media (min-width:992px) {
 .coffee-brand {
 	display: table-cell;
 	vertical-align: middle;
 	height: 123px;
-	font-size:22px;
+	font-size:20px;
+}
+}
+
+@media (max-width:991px) {
+.coffee-brand {
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	height: 28px;
+	font-size:20px;
+}
+}
+
+@media (max-width:485px) {
+.coffee-brand {
+	min-width:112px;
+}
 }
