@@ -8,7 +8,6 @@ body {
 }
 
 .coffee-table{
-  background-color:#7a3402;
   color:#FFFFFF;
 }
 
@@ -26,6 +25,7 @@ div.header{
 	height:90px;
 	top: 40px;
 	left: 0px;
+	right: 0px;
 	background-image: url('images/header_beans.jpg');
 }
 
@@ -35,11 +35,43 @@ div.header{
 	background:#c59f67;
 }
 
+@media (max-width: 767px) {
+.centering{
+	margin-right: auto;
+	margin-left: auto;
+	width:400px;
+	float:none;
+	display: -webkit-box;
+}
+
+.container{
+	padding-left:0px;
+	padding-right:0px;
+}
+
+.navbar-nav{
+	margin-top:0;
+	margin-bottom:0;
+}
+
+li{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+}
+@media (min-width: 768px) {
 .centering{
 	margin-right: auto;
 	margin-left: auto;
 	width: 400px;
 	float: none;
+}
+}
+
+
+#selection-bg{
+	background:#5f3316;
+
 }
 
 li{
@@ -48,6 +80,10 @@ li{
 	font-size: 20px;
 	letter-spacing: 1px;
 	color:#5f3316;
+}
+
+a:hover{
+	color:#c59f67;
 }
 
 a{
