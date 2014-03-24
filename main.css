@@ -1,130 +1,150 @@
 body {
   padding-top: 50px;
-  background-image:url('images/bg_hazelwood.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
+  background-image: url('images/bg_hazelwood.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-.coffee-table{
+.coffee-table {
   color:#FFFFFF;
 }
 
-div.header{
+div.header {
 	text-align: center;
 	color: #c59f67;
 	font-size: 60px;
 	font-weight: 500;
 	-webkit-text-stroke: 1px;
 	-webkit-text-stroke-color: black;
+	-webkit-user-select: none;
+	cursor: default;
 }
 
-#header-img{
+#header-img {
 	width: 100%;
-	height:90px;
+	height: 85px;
 	top: 40px;
 	left: 0px;
 	right: 0px;
 	background-image: url('images/header_beans.jpg');
 }
 
-#navbar-bg{
-	margin-top:15px;
-	margin-bottom:15px;
-	background:#c59f67;
+#navbar-bg {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #c59f67;
 }
 
 @media (max-width: 767px) {
-.centering{
-	margin-right: auto;
-	margin-left: auto;
-	width:400px;
-	float:none;
-	display: -webkit-box;
+	.centering {
+		margin-right: auto;
+		margin-left: auto;
+		width: 300px;
+		float: none;
+		display: -webkit-box;
+	}
+
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	li {
+		width: 150px;
+		font-size: 15px;
+	}
 }
 
-.container{
-	padding-left:0px;
-	padding-right:0px;
-}
-
-.navbar-nav{
-	margin-top:0;
-	margin-bottom:0;
-}
-
-li{
-	padding-top:5px;
-	padding-bottom:5px;
-}
-}
 @media (min-width: 768px) {
-.centering{
-	margin-right: auto;
-	margin-left: auto;
-	width: 400px;
-	float: none;
+	.centering {
+		margin-right: auto;
+		margin-left: auto;
+		width: 400px;
+		float: none;
+	}
+	
+	li {
+		width: 200px;
+		font-size: 20px;
+	}
+	
 }
-}
 
-
-#selection-bg{
-	background:#5f3316;
-
-}
-
-li{
-	width:200px;
-	text-align:center;
-	font-size: 20px;
+li {
+	text-align: center;
 	letter-spacing: 1px;
-	color:#5f3316;
+	color: #5f3316;
 }
 
-a:hover{
-	color:#c59f67;
+a:hover {
+	color: #c59f67;
 }
 
 a{
-	color:inherit;
+	color: inherit;
 }
 
 .active{
-	background-color:#5f3316;
-	color:#c59f67;
+	background-color: #5f3316;
+	color: #c59f67;
 }
 
-.coffee-logo {
-	width:115px;
-	height:123px;
-	padding-top:20px;
-	padding-bottom:20px;
-	margin-left: auto;
-	margin-right: auto;
-	display: -webkit-box;
+#selection-bg {
+	background: #5f3316;
+
 }
-@media (min-width:992px) {
-.coffee-brand {
-	display: table-cell;
-	vertical-align: middle;
-	height: 123px;
-	font-size:20px;
-}
+@media (max-width: 767px) {
+	.coffee-logo {
+		height: 83px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: -webkit-box;
+	}
+
+	
+	.coffee-brand {
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+		height: 28px;
+		font-size: 12px;
+	}
 }
 
-@media (max-width:991px) {
-.coffee-brand {
-	margin-left: auto;
-	margin-right: auto;
-	display: table;
-	height: 28px;
-	font-size:20px;
-}
+@media (min-width: 768px) {
+	.coffee-logo {
+		height: 123px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: -webkit-box;
+	}
+	
+	.coffee-brand {
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+		height: 28px;
+		font-size: 20px;
+	}
 }
 
-@media (max-width:485px) {
-.coffee-brand {
-	min-width:112px;
-}
+@media (min-width: 992px) {
+	.coffee-brand {
+		display: table-cell;
+		vertical-align: middle;
+		height: 123px;
+		font-size: 20px;
+	}
 }
