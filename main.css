@@ -1,5 +1,5 @@
 body {
-  padding-top: 50px;
+  padding-top: 30px;
   background-image: url('images/bg_hazelwood.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
 }
 
@@ -36,20 +36,16 @@ div.header {
 	margin-top: 15px;
 	margin-bottom: 15px;
 	background: #c59f67;
+	width: 99.8%;
 }
 
 @media (max-width: 767px) {
 	.centering {
 		margin-right: auto;
 		margin-left: auto;
-		width: 300px;
+		width: 100%;
 		float: none;
 		display: -webkit-box;
-	}
-
-	.container {
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 
 	.navbar-nav {
@@ -58,8 +54,18 @@ div.header {
 	}
 
 	li {
-		width: 150px;
+		width: 50%;
 		font-size: 15px;
+	}
+	
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.container {
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 }
 
@@ -99,7 +105,8 @@ a{
 
 #selection-bg {
 	background: #5f3316;
-
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 @media (max-width: 767px) {
 	.coffee-logo {
@@ -136,7 +143,7 @@ a{
 		margin-right: auto;
 		display: table;
 		height: 28px;
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 
@@ -145,6 +152,22 @@ a{
 		display: table-cell;
 		vertical-align: middle;
 		height: 123px;
-		font-size: 20px;
+		font-size: 18px;
 	}
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#foot{
+	background: #B6A791;
+	height: 65px;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	padding-top: 23px;
+	color: rgb(83, 83, 83);
 }
