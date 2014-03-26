@@ -23,6 +23,8 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		
+		<script src="animations.js"></script>
 	</head>
 	<body>
     <div id="header-img">
@@ -35,17 +37,18 @@
     <div id="navbar-bg">
 		<div class="container">
 		  		<ul class="nav navbar-nav centering">
-					<li class="active"><a href="#">ORDER</a></li>
-					<li><a href="#about">COMMUNITY</a></li>
+					<li id="nav-order" class="active"><a onclick="javascript:navOrder();">ORDER</a></li>
+					<li id="nav-community"><a onclick="javascript:navCommunity();">COMMUNITY</a></li>
 				</ul>
 	    </div>
 	</div>
 	<div id="selection-bg">
+	
 		<div class="container coffee-table">
 			<div class="row">
 				<div class="col-xs-4">
 					<div class="col-md-6 col-xs-12">
-						<img class="coffee-logo" src="images/juhla_mokka.png">
+						<img id="juhla_mokka" class="coffee-logo" onclick="javascript:order(juhla_mokka);" src="images/juhla_mokka.png">
 					</div>
 					<div class="col-md-6 col-xs-12">
 						<div class="coffee-brand">Juhla Mokka</div>
@@ -121,7 +124,202 @@
 				</div>
 			</div><!-- /.row -->		
 		</div><!-- /.container -->
+		
+		<div class="container order-list" style="display:none;">
+			<div class="row">
+				<div class="col-xs-3">
+					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka1.png">
+				</div>
+				<div class="col-xs-3">
+					<div class="details">
+						<table>
+							<tr>
+								<th>JUHLA MOKKA</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Valmistustapa</td>
+								<td>A B</td>
+							</tr>
+							<tr>
+								<td>Paahtoaste</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<th>MAKUPROFIILI</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Vahvuus</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Aromikkuus</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Hapokkuus</td>
+								<td>6</td>
+							</tr>
+						</table>
+					</div>
+					<select class="form-control">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<div class="col-xs-3">
+					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka2.png">
+				</div>
+				<div class="col-xs-3">
+					<div class="details">
+						<table>
+							<tr>
+								<th>JUHLA MOKKA</th>
+								<th></th>
+							</tr>
+							<tr>
+								<th>TUMMA PAAHTO</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Valmistustapa</td>
+								<td>A B</td>
+							</tr>
+							<tr>
+								<td>Paahtoaste</td>
+								<td>2.5</td>
+							</tr>
+							<tr>
+								<th>MAKUPROFIILI</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Vahvuus</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>Aromikkuus</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>Hapokkuus</td>
+								<td>4</td>
+							</tr>
+						</table>
+					</div>
+					<select class="form-control">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+			</div>
+			<div class="row" style="margin-top:20px;">
+				<div class="col-xs-3">
+					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka3.png">
+				</div>
+				<div class="col-xs-3">
+					<div class="details">
+						<table>
+							<tr>
+								<th>JUHLA MOKKA PAPU</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Paahtoaste</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<th>MAKUPROFIILI</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Vahvuus</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Aromikkuus</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Hapokkuus</td>
+								<td>6</td>
+							</tr>
+						</table>
+					</div>
+					<select class="form-control">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+				<div class="col-xs-3">
+					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka4.png">
+				</div>
+				<div class="col-xs-3">
+					<div class="details">
+						<table>
+							<tr>
+								<th>JUHLA MOKKA 100g</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Valmistustapa</td>
+								<td>A B</td>
+							</tr>
+							<tr>
+								<td>Paahtoaste</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<th>MAKUPROFIILI</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Vahvuus</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Aromikkuus</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>Hapokkuus</td>
+								<td>6</td>
+							</tr>
+						</table>
+					</div>
+					<select class="form-control">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+					</select>
+				</div>
+			</div>
+			<div id="orderbutton"><button type="button" class="btn btn-primary btn-lg">Order</button></div>
+			<div id="backbutton" onclick="javascript:navOrder();"><button type="button" class="btn btn-primary btn-sm">Back</button></div>
+		</div>
+		
+		<div class="container community-page" style="display:none;">
+			Sorry! We Are Under Construction!
+		</div>
+		
 	</div>
+	
 	
 	<div id="foot">
 		An Interdisciplinary Product Development Project
