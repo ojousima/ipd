@@ -127,19 +127,15 @@
 		
 		<div class="container order-list" style="display:none;">
 			<div class="row">
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka1.png">
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<div class="details">
 						<table>
 							<tr>
 								<th>JUHLA MOKKA</th>
 								<th></th>
-							</tr>
-							<tr>
-								<td>Valmistustapa</td>
-								<td>A B</td>
 							</tr>
 							<tr>
 								<td>Paahtoaste</td>
@@ -172,10 +168,10 @@
 						<option>5</option>
 					</select>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka2.png">
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<div class="details">
 						<table>
 							<tr>
@@ -187,12 +183,8 @@
 								<th></th>
 							</tr>
 							<tr>
-								<td>Valmistustapa</td>
-								<td>A B</td>
-							</tr>
-							<tr>
 								<td>Paahtoaste</td>
-								<td>2.5</td>
+								<td>2</td>
 							</tr>
 							<tr>
 								<th>MAKUPROFIILI</th>
@@ -223,10 +215,10 @@
 				</div>
 			</div>
 			<div class="row" style="margin-top:20px;">
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka3.png">
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<div class="details">
 						<table>
 							<tr>
@@ -264,19 +256,15 @@
 						<option>5</option>
 					</select>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<img class="coffee-pack" src="images/juhlamokka/juhla_mokka4.png">
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-6 col-sm-3">
 					<div class="details">
 						<table>
 							<tr>
 								<th>JUHLA MOKKA 100g</th>
 								<th></th>
-							</tr>
-							<tr>
-								<td>Valmistustapa</td>
-								<td>A B</td>
 							</tr>
 							<tr>
 								<td>Paahtoaste</td>
@@ -310,8 +298,12 @@
 					</select>
 				</div>
 			</div>
-			<div id="orderbutton"><button type="button" class="btn btn-primary btn-lg">Order</button></div>
+			<div id="orderbutton" onclick="javascript:orderCompleted();"><button type="button" class="btn btn-primary btn-lg">Order</button></div>
 			<div id="backbutton" onclick="javascript:navOrder();"><button type="button" class="btn btn-primary btn-sm">Back</button></div>
+		</div>
+		
+		<div class="container order-completed" style="display:none;">
+			Order Complete!
 		</div>
 		
 		<div class="container community-page" style="display:none;">

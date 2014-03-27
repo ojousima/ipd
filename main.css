@@ -174,19 +174,26 @@ a{
 
 @media (max-width: 767px) {
 	.coffee-pack {
-		height: 180px;
+		height: 140px;
 		padding-bottom: 10px;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 10px;
 		display: -webkit-box;
 	}
-
 	
-	.coffee-details {
-		display: table-cell;
-		vertical-align: middle;
-		height: 123px;
-		font-size: 18px;
+	.details {
+		font-size: 12px;
+		height: 120px;
+		margin-top: 30px;
+	}
+	
+	.coffeeicons {
+		height: 12px;
+	}
+	
+	.order-list table {
+		width: 80%;
 	}
 }
 
@@ -199,11 +206,12 @@ a{
 		display: -webkit-box;
 	}
 	
-	.coffee-details {
-		display: table-cell;
-		vertical-align: middle;
-		height: 123px;
-		font-size: 18px;
+	.details {
+		height:160px;
+	}
+	
+	.order-list table {
+		width: 100%;
 	}
 }
 
@@ -220,14 +228,7 @@ a{
 	color: #c59f67;
 }
 
-.order-list table {
-	width: 100%;
-	
-}
 
-.details {
-height:160px;
-}
 
 .form-control {
 	width: 53px;
@@ -269,6 +270,10 @@ height:160px;
 	text-align:center;
 }
 
+.order-completed{
+	color: white;
+	text-align:center;
+}
 #foot{
 	background: #B6A791;
 	height: 65px;

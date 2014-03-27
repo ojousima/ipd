@@ -5,9 +5,10 @@ function navOrder () {
 	$("#nav-community").removeClass("active");
 	$(".order-list").fadeOut(400,function () {
 		$(".coffee-logo").show();
-		$(".coffee-brand").show();
+		$(".coffee-brand").css("display","table-cell");
 	});
 	$(".community-page").hide();
+	$(".order-completed").hide();
 }
 	
 function navCommunity () {
@@ -17,7 +18,7 @@ function navCommunity () {
 	$(".coffee-logo").hide();
 	$(".coffee-brand").hide();
 	$(".community-page").show();
-	
+	$(".order-completed").hide();
 }
 
 function order (item) {
@@ -27,4 +28,13 @@ function order (item) {
 		$(".order-list").show();
 	});
 	$(".community-page").hide();
+	$(".order-completed").hide();
+}
+
+function orderCompleted() {
+	$(".order-list").hide();
+	$(".coffee-logo").hide();
+	$(".coffee-brand").hide();
+	$(".community-page").hide();
+	$(".order-completed").show();
 }
