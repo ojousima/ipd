@@ -5,7 +5,7 @@ function navOrder () {
 	$("#nav-community").removeClass("active");
 	$(".order-list").fadeOut(400,function () {
 		$(".coffee-logo").show();
-		$(".coffee-brand").css("display","table-cell");
+		$(".coffee-brand").css("display","table");
 	});
 	$(".community-page").hide();
 	$(".order-completed").hide();

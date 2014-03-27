@@ -159,7 +159,8 @@ a{
 
 @media (min-width: 992px) {
 	.coffee-brand {
-		display: table-cell;
+		display: table;
+		padding-top: 45px;
 		vertical-align: middle;
 		height: 123px;
 		font-size: 18px;
