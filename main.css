@@ -275,6 +275,11 @@ a{
 	color: white;
 	text-align:center;
 }
+
+span.author{
+	font-style:italic;
+}
+
 #foot{
 	background: #B6A791;
 	height: 65px;
