@@ -1,6 +1,7 @@
 body {
   padding-top: 30px;
   background-image: url('images/bg_hazelwood.jpg'); //Thanks to http://www.zezu.org/wood-plank-vector/
+  height:100%;
 }
 
 .starter-template {
@@ -113,8 +114,9 @@ a{
 
 #selection-bg {
 	background: #5f3316;
+	min-height: 100%;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 65px;
 }
 @media (max-width: 767px) {
 	.coffee-logo {
@@ -280,11 +282,12 @@ span.author{
 	font-style:italic;
 }
 
-#foot{
+.footer{
 	background: #B6A791;
+	position:relative;
 	height: 65px;
 	width: 100%;
-	margin-top:100px;
+	margin-top:-65px;
 	text-align: center;
 	padding-top: 23px;
 	color: rgb(83, 83, 83);
